@@ -104,14 +104,14 @@ void TestStreams (void)
 	i, ui, li, uli, f, d, static_cast<int>(si), static_cast<int>(usi));
 
     //if (isatty (STDIN_FILENO)) {
-	cout << "\nBinary dump:\n";
-	foreach (memblock::const_iterator, pc, b) {
-	    if (pc > b.begin() && !(distance(b.begin(), pc) % 8))
-		cout << endl;
-	    cout.format ("%02X ", uint8_t(*pc));
+	//	cout << "\nBinary dump:\n";
+	//	foreach (memblock::const_iterator, pc, b) {
+	//		if (pc > b.begin() && !(distance(b.begin(), pc) % 8))
+	//		cout << endl;
+	//		cout.format ("%02X ", uint8_t(*pc));
 	//}
-	cout << endl;
-    }
+	//cout << endl;
+    //}
 }
 
 StdBvtMain (TestStreams)

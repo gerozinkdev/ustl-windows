@@ -117,6 +117,8 @@ newaction
 		text = text:gsub("#undef HAVE_SIGNAL_H", "#define HAVE_SIGNAL_H 1")
 		text = text:gsub("#undef HAVE_SIGNAL_H", "#define HAVE_SIGNAL_H 0")
 		text = text:gsub("#undef HAVE_STDINT_H", "#define HAVE_STDINT_H 1")
+		
+		text = text:gsub("#undef HAVE_INT64_T", "#define HAVE_INT64_T 1")
 
 		text = text:gsub("#define HAVE_VA_COPY 1", "#define HAVE_VA_COPY 0")
 		text = text:gsub("#define HAVE_STRSIGNAL 1", "#define HAVE_STRSIGNAL 0")	
