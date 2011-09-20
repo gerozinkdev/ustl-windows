@@ -23,6 +23,7 @@ public:
 				ostringstream (const string& v = "");
 				ostringstream (void* p, size_t n);
     void				iwrite (char v);
+	void				iwrite (unsigned char v);
     void				iwrite (wchar_t v);
     inline void			iwrite (int v)			{ iformat (v); }
     inline void			iwrite (unsigned int v)		{ iformat (v); }

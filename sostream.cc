@@ -52,6 +52,13 @@ void ostringstream::iwrite (char v)
 	ostream::iwrite (v);
 }
 
+/// Writes a single character into the stream.
+void ostringstream::iwrite (unsigned char v)
+{
+    if (remaining() >= 1 || overflow() >= 1)
+	ostream::iwrite (v);
+}
+
 /// Writes the contents of \p buffer of \p size into the stream.
 ostringstream& ostringstream::write (const void* buffer, size_type sz)
 {

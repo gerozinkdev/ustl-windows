@@ -1,20 +1,20 @@
-85 bytes written
+84 bytes written
 Values:
 char:    'c'
-u_char:  '9'
-bool:    0
-int:     0
-u_int:   0
-long:    0
-u_long:  0
-float:   0.00
-double:  0.00
-short:   0
-u_short: 0
+u_char:  'c'
+bool:    1
+int:     -12345678
+u_int:   12345678
+long:    -12345678
+u_long:  12345678
+float:   123.46
+double:  123456789123456.78
+short:   1234
+u_short: 1234
 
 Dump:
 c
-99
+c
 true
 -12345678
 12345678
